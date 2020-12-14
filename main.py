@@ -49,7 +49,7 @@ class Main(QMainWindow, Ui_MainWindow):
             self.draw_circle = 0
             for i in range(randint(0, 10)):
                 radius, x, y = randint(10, 100), randint(0, 260), randint(0, 250)
-                qp.setBrush(QColor(255, 255, 0))
+                qp.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
                 qp.drawEllipse(x, y, radius, radius)
 
     def paintEvent(self, event):
